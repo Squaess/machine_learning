@@ -1,0 +1,13 @@
+name: l8p
+channels:
+- !!python/unicode
+  'defaults'
+dependencies:
+- python=3.6
+- pip==9.0.1
+- numpy==1.14.2
+- jupyter==1.0
+- matplotlib==2.2.2
+- fiona==1.7.10
+- pip:
+  - rasterio==1.0a12
