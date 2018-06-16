@@ -1,137 +1,135 @@
 import sys
 
 def drawTop( width, height):
-    for x in range(0, height):
-        for i in range (0, width):
+    for _ in range(0, height):
+        for _ in range (0, width):
             sys.stdout.write('..')
-        for i in range(0, width):
-            sys.stdout.write('#'),
-        for i in range(0, width):
-            sys.stdout.write('...'),
-        for i in range(0, width):
-            sys.stdout.write('#'),
-        for i in range(0, width):
+        for _ in range(0, width):
+            sys.stdout.write('#')
+        for _ in range(0, width):
+            sys.stdout.write('...')
+        for _ in range(0, width):
+            sys.stdout.write('#')
+        for _ in range(0, width):
             sys.stdout.write('..')
         sys.stdout.write('\n')
     
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('.')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('###')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('###')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.')
         sys.stdout.write('\n')
 
-    for j in range(0,3):
-        for x in range(0, height):
-            for i in range(0, width):
+    for _ in range(0,3):
+        for _ in range(0, height):
+            for _ in range(0, width):
                 sys.stdout.write("#########")
             sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('##')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('###')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('##')
         sys.stdout.write('\n')
 
-    for x in range(0,height):
-        for i in range(0,width):
+    for _ in range(0,height):
+        for _ in range(0,width):
             sys.stdout.write('##')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('..')
-        for i in range(0,width):
+        for _ in range(0,width):
             sys.stdout.write('#')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('..')
-        for i in range(0,width):
+        for _ in range(0,width):
             sys.stdout.write('##')
         sys.stdout.write('\n')
-    
-    for x in range(0,height):
-        for i in range(0,width):
+
+
+def drawMiddle( width, height):
+    for _ in range(0,height):
+        for _ in range(0,width):
             sys.stdout.write('##')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.....')
-        for i in range(0,width):
+        for _ in range(0,width):
             sys.stdout.write('##')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+def drawBottom( width, height):
+    
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('###')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('...')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('###')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('####')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('####')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('#########')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('.')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('#######')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('.')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('..')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('#####')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('..')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('...')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('###')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('...')
         sys.stdout.write('\n')
 
-    for x in range(0, height):
-        for i in range(0, width):
+    for _ in range(0, height):
+        for _ in range(0, width):
             sys.stdout.write('....')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('#')
-        for i in range(0, width):
+        for _ in range(0, width):
             sys.stdout.write('....')
         sys.stdout.write('\n')
-
-def drawMiddle( width, height):
-    pass
-
-def drawBottom( width, height):
-    pass
 
 def drawHeart( argument_list ):
     drawTop(argument_list[0], argument_list[1])
