@@ -23,7 +23,11 @@ Read the data from file as csv format.
 We're useing pandas wich is great madule for 
 managing data. We take only story_points and KSP
 '''
-df = pd.read_csv(file_name)
+try:
+    df = pd.read_csv(file_name)
+except FileNotFoundError:
+    exit('File not found')
+    
 Data = df.iloc[:, 1:3].values
 
 '''

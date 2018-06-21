@@ -17,6 +17,13 @@ class MyHTMLParser(HTMLParser):
                     print("Click click 2...")
                     self.buttonz = self.buttonz + 1
                     break
+                elif i == 'class':
+                    classes = i.split(" ")
+                    for c in classes:
+                        upper_c = c.upper()
+                        if 'BUTON' in upper_c or 'BTN' in upper_c:
+                            self.buttonz = self.buttonz + 1
+                            break
                     
         else:
             for name, value in attrs:
@@ -31,6 +38,6 @@ class MyHTMLParser(HTMLParser):
 
 parser = MyHTMLParser()
 parser.init()
-parser.feed('<!DOCTYPE html>  <html>  <head>  <title>Example test page</title>  </head>  <body>  <a href="#" name="NonButtonLink">boring link</a>  <a href="#" class="btn btn-small">interesting button-link</a>  <button class="funnyButton">Click me!</button>  <a href="#" class="funnyButton">I’m a special Button!</a>    <form>  <input type="submit" name="saveButton" value="Submit me!">  </form>​ <button  class="btn btn-small"> Click clickitty click </button>  </body>  </html>  ')
+parser.feed('<!DOCTYPE html>  <html>  <head>  <title>Example test page</title>  </head>  <body>  <a href="#" name="NonButtonLink">boring link</a>  <a href="#" class="btn btn-small">interesting button-link</a>  <button class="funnyButton">Click me!</button>  <a href="#" class="funnyButton">I’m a special Button!</a>    <form>  <input type="submit" name="saveButton" value="Submit me!">  </form>​ <button  class="bartosz btn-small"> Click clickitty click </button>  </body>  </html>  ')
 print(parser.buttonz)
 

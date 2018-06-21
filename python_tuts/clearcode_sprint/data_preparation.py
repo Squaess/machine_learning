@@ -2,7 +2,7 @@ import random
 n = 10000
 
 
-with open('data.txt', "w") as f:
+with open('data.csv', "w") as f:
     f.write('task_id,story_points,KSP\n')
     for i in range(n):
         f.write(str(i))
