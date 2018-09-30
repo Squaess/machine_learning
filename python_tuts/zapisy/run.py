@@ -25,7 +25,7 @@ if table2 == None:
 for row in table2.findAll(lambda tag: tag.name == 'tr'):
     content = row.get_text()
     splited = content.split()
-    if splited[1] in kod_grupy and splited[5] != '0':
+    if splited[1] in kod_grupy and content.split("\n")[6] != '0':
         splited_n = content.split('\n')
         splited_n[3] = bcolors.FAIL + splited_n[3] + bcolors.ENDC
         splited_n[4] = bcolors.WARNING + splited_n[4] + bcolors.ENDC
