@@ -66,7 +66,7 @@ class AdalineGD(object):
         """Calculate net input"""
         return np.dot(X, self.w_[1:]) + self.w_[0]
 
-    def activation(selft, X):
+    def activation(self, X):
         """Compute linear activation """
         return self.net_input(X)
 
